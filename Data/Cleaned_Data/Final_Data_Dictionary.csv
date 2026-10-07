@@ -1,0 +1,27 @@
+COLUMN NAME,data type,values/range,description
+SESSION_GUID,object,unique 32 alphanumeric digits,unique session id (global unique id)
+M_TIMESTAMP,float,timestamp,the wallclock timestamp of when the session is taken
+M_CURRENTLAPNUM,integer,1 to 21,"current lap number, ranging from 1 to 21"
+M_SPEED_1,float,2 to 325,vehicle's current forward speed
+M_THROTTLE_1,float,0 to 1,"represents value (often as a percentage) from 0 to 1
+0.7 means 70% strength"
+M_STEER_1,float,-1 to 1,"represents the strength and direction of the steering wheel
+-1.0 → full lock to the left
+
+0.0 → steering wheel is centered
+
++1.0 → full lock to the right"
+M_BRAKE_1,float,0 to 1,"represents value (often as a percentage) from 0 to 1
+0.7 means 70% strength"
+M_GEAR_1,float,1 to 8,"-1: reverse gear
+0: neutral (stopping)
+1-8: forward gear (with 8 being maximum speed)"
+M_CURRENTLAPINVALID_1,integer,0 or 1 (binary),"Binary variable recording whether the current lap is invalid
+the value 0 represents the car going on track, and the value 1 represents the car going fully off the track"
+M_WORLDPOSITIONX_1,float,"200.0018 to 599.9984212
+",World space X position
+M_WORLDPOSITIONY_1,float," -179.5260662
+ to 387.181365
+",World space Y position
+M_WORLDPOSITIONZ_1,float,"1.875996 to 3.513932495
+",World space Z position

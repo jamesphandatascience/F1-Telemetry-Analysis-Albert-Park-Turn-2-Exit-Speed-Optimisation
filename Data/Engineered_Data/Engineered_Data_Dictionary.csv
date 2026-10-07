@@ -1,0 +1,15 @@
+COLUMN NAME,Data Type ,Turn 1 Values/Range,Turn 2 Values/Range,Mid Point Values/Range,Brake Point Values/Range,Description
+SESSION_GUID,Object,,,,,globally unique identifier for the racing session
+M_CURRENTLAPNUM,Integer,1 to 21,1 to 21,1 to 21,1 to 21,current lap number the vehicle is on within the session
+x,Float,352.46 to 386.90,360.36 to 390.28,354.97 to 396.76,337.64 to 346.79,world space X (longitudinal) position coordinate
+y,Float,191.05 to 191.90,88.01 to 94.62,132.46 to 143.83,238.25 to 247.73,world space Y (lateral) position coordinate
+z,Float,2.11 to 2.61,2.53 to 3.01,2.52 to 2.79,2.20 to 2.31,world space Z (vertical) position coordinate
+Speed,Integer,74 to 277,65 to 272,47 to 241,91 to 314,vehicle's current forward speed
+Throttle,Float,0.00 to 1.00,0.00 to 1.00,0.00 to 1.00,0.00 to 1.00,normalized throttle position: 0 = fully closed (0% throttle) & 1 = fully open (100% throttle).
+Brake,Float,0.00 to 1.00,0.00 to 1.00,0.00 to 1.00,0.00 to 1.00,"normalized brake input position: representing how much the driver is pressing the brake pedal.
+0.0 to 1.0 (0% to 100% brake pressure)"
+Steer,Float,-0.11 to 1.00,-1.00 to 1.00,-1.00 to 1.00,-0.49 to 0.64,"Normalized steering input representsing the steering wheel position.
+-1.0 = full left lock, 0.0 = centered, 1.0 = full right lock"
+Gear,Integer,1 to 7,1 to 7,1 to 7 ,2 to 8,current gear selection of the vehicle: gear 1-8 = forward gear
+Offtrack,Boolean,True or False,True or False,True or False,True or False,"indicates whether the vehicle is currently outside the legal track boundaries
+True = vehicle is off track & False = vehicle is on track"
